@@ -2,6 +2,7 @@
 
 namespace Sid\ContainerResolver;
 
+use InvalidArgumentException;
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionParameter;
@@ -81,7 +82,7 @@ abstract class Resolver implements ResolverInterface
 
         foreach ($reflectionParameters as $reflectionParameter) {
             if (!($reflectionParameter instanceof ReflectionParameter)) {
-                throw new \InvalidArgumentExeption();
+                throw new InvalidArgumentException();
             }
 
 
