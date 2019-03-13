@@ -54,17 +54,17 @@ use Doctrine\ORM\EntityManager;
 
 class Example
 {
-	public function methodName(EntityManager $doctrine, Auth $auth)
-	{
-		return get_class($doctrine) . " and " . get_class($auth);
-	}
+    public function methodName(EntityManager $doctrine, Auth $auth)
+    {
+        return get_class($doctrine) . " and " . get_class($auth);
+    }
 }
 
 $object = new Example();
 
 // "Doctrine\ORM\EntityManager and Auth"
 $resolver->typehintMethod(
-	$object,
+    $object,
     "method_name"
 );
 ```
@@ -76,7 +76,7 @@ use Doctrine\ORM\EntityManager;
 
 function hello(EntityManager $doctrine, Auth $auth)
 {
-	return get_class($doctrine) . " and " . get_class($auth);
+    return get_class($doctrine) . " and " . get_class($auth);
 }
 
 // "Doctrine\ORM\EntityManager and Auth"
