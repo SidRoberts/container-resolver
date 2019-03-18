@@ -1,24 +1,23 @@
-actor: Tester
+suites:
+    unit:
+        path: .
+
+settings:
+    shuffle: true
+    lint: true
+    bootstrap: _bootstrap.php
+
 paths:
     tests: tests
-    log: tests/_output
-    data: tests/_data
+    output: tests/_output
     support: tests/_support
-    envs: tests/_envs
-settings:
-    bootstrap: _bootstrap.php
-    colors: true
-    memory_limit: 1024M
+    data: tests
+
 extensions:
     enabled:
         - Codeception\Extension\RunFailed
-modules:
-    config:
-        Db:
-            dsn: ''
-            user: ''
-            password: ''
-            dump: tests/_data/dump.sql
+
+
 coverage:
     enabled: true
     whitelist:

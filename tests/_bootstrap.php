@@ -1,2 +1,6 @@
 <?php
-// This is global bootstrap for autoloading
+
+function hello($a, $b)
+{
+    return $a . " - " . $b;
+}
