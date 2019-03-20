@@ -13,11 +13,6 @@ paths:
     support: tests/_support
     data: tests
 
-extensions:
-    enabled:
-        - Codeception\Extension\RunFailed
-
-
 coverage:
     enabled: true
     whitelist:
