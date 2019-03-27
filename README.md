@@ -2,8 +2,13 @@
 
 A standardised way to typehint classes, methods and functions with any container.
 
-[![Build Status](https://travis-ci.org/SidRoberts/container-resolver.svg?branch=master)](https://travis-ci.org/SidRoberts/container-resolver)
-[![GitHub tag](https://img.shields.io/github/tag/sidroberts/container-resolver.svg?maxAge=2592000)]()
+[![Build Status](https://img.shields.io/travis/SidRoberts/container-resolver/1.0.x.svg?style=for-the-badge)](https://travis-ci.org/SidRoberts/container-resolver)
+[![GitHub release](https://img.shields.io/github/release/SidRoberts/container-resolver.svg?style=for-the-badge)]()
+
+[![License](https://img.shields.io/github/license/SidRoberts/container-resolver.svg?style=for-the-badge)]()
+
+[![GitHub issues](https://img.shields.io/github/issues-raw/SidRoberts/container-resolver.svg?style=for-the-badge)]()
+[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/SidRoberts/container-resolver.svg?style=for-the-badge)]()
 
 
 
