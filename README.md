@@ -7,8 +7,8 @@ A standardised way to typehint classes, methods and functions with any container
 
 [![License](https://img.shields.io/github/license/SidRoberts/container-resolver.svg?style=for-the-badge)]()
 
-[![GitHub issues](https://img.shields.io/github/issues-raw/SidRoberts/container-resolver.svg?style=for-the-badge)]()
-[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/SidRoberts/container-resolver.svg?style=for-the-badge)]()
+[![GitHub issues](https://img.shields.io/github/issues-raw/SidRoberts/container-resolver.svg?style=for-the-badge)](https://github.com/SidRoberts/container-resolver/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/SidRoberts/container-resolver.svg?style=for-the-badge)](https://github.com/SidRoberts/container-resolver/pulls)
 
 
 
