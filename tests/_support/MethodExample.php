@@ -1,5 +1,7 @@
 <?php
 
+namespace Tests;
+
 class MethodExample
 {
     public function single($a)
@@ -10,8 +12,8 @@ class MethodExample
     public function multiple($a, $b)
     {
         return [
-        	"a" => $a,
-        	"b" => $b,
+            "a" => $a,
+            "b" => $b,
         ];
     }
 }

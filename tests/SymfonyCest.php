@@ -1,16 +1,13 @@
 <?php
 
-namespace Sid\ContainerResolver\Test\Unit;
-
-use Codeception\TestCase\Test;
-
-use Symfony\Component\DependencyInjection\Container;
+namespace Tests;
 
 use Sid\ContainerResolver\Resolver\Psr11;
+use Symfony\Component\DependencyInjection\Container;
 
-class SymfonyTest extends Test
+class SymfonyCest
 {
-    public function test()
+    public function test(UnitTester $I)
     {
         $container = new Container();
 
@@ -27,7 +24,7 @@ class SymfonyTest extends Test
         $resolver = new Psr11($container);
 
         $class = $resolver->typehintClass(
-            \Example::class
+            Example::class
         );
 
 
@@ -35,11 +32,11 @@ class SymfonyTest extends Test
         $actualA = $class->getA();
         $actualB = $class->getB();
 
-        $this->assertEquals($a, $actualA);
-        $this->assertEquals($b, $actualB);
+        $I->assertEquals($a, $actualA);
+        $I->assertEquals($b, $actualB);
     }
 
-    public function testMethod()
+    public function method(UnitTester $I)
     {
         $container = new Container();
 
@@ -53,7 +50,7 @@ class SymfonyTest extends Test
 
 
 
-        $methodExample = new \MethodExample();
+        $methodExample = new MethodExample();
 
 
 
@@ -65,7 +62,7 @@ class SymfonyTest extends Test
             "single"
         );
 
-        $this->assertEquals($expected, $actual);
+        $I->assertEquals($expected, $actual);
 
 
 
@@ -74,11 +71,11 @@ class SymfonyTest extends Test
             "multiple"
         );
 
-        $this->assertEquals($a, $actual["a"]);
-        $this->assertEquals($b, $actual["b"]);
+        $I->assertEquals($a, $actual["a"]);
+        $I->assertEquals($b, $actual["b"]);
     }
 
-    public function testTypehintFunction()
+    public function typehintFunction(UnitTester $I)
     {
         $container = new Container();
 
@@ -96,9 +93,9 @@ class SymfonyTest extends Test
 
 
 
-        $expected = hello($a, $b);
+        $expected = \hello($a, $b);
         $actual   = $resolver->typehintFunction("hello");
 
-        $this->assertEquals($expected, $actual);
+        $I->assertEquals($expected, $actual);
     }
 }

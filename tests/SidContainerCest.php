@@ -1,16 +1,13 @@
 <?php
 
-namespace Sid\ContainerResolver\Test\Unit;
-
-use Codeception\TestCase\Test;
+namespace Tests;
 
 use Sid\Container\Container;
-
 use Sid\ContainerResolver\Resolver\SidContainer;
 
-class SidContainerTest extends Test
+class SidContainerCest
 {
-    public function test()
+    public function test(UnitTester $I)
     {
         $container = new Container();
 
@@ -27,7 +24,7 @@ class SidContainerTest extends Test
         $resolver = new SidContainer($container);
 
         $class = $resolver->typehintClass(
-            \Example::class
+            Example::class
         );
 
 
@@ -35,11 +32,11 @@ class SidContainerTest extends Test
         $actualA = $class->getA();
         $actualB = $class->getB();
 
-        $this->assertEquals($a, $actualA);
-        $this->assertEquals($b, $actualB);
+        $I->assertEquals($a, $actualA);
+        $I->assertEquals($b, $actualB);
     }
 
-    public function testMethod()
+    public function method(UnitTester $I)
     {
         $container = new Container();
 
@@ -53,7 +50,7 @@ class SidContainerTest extends Test
 
 
 
-        $methodExample = new \MethodExample();
+        $methodExample = new MethodExample();
 
 
 
@@ -65,7 +62,7 @@ class SidContainerTest extends Test
             "single"
         );
 
-        $this->assertEquals($expected, $actual);
+        $I->assertEquals($expected, $actual);
 
 
 
@@ -74,11 +71,11 @@ class SidContainerTest extends Test
             "multiple"
         );
 
-        $this->assertEquals($a, $actual["a"]);
-        $this->assertEquals($b, $actual["b"]);
+        $I->assertEquals($a, $actual["a"]);
+        $I->assertEquals($b, $actual["b"]);
     }
 
-    public function testTypehintFunction()
+    public function typehintFunction(UnitTester $I)
     {
         $container = new Container();
 
@@ -96,9 +93,9 @@ class SidContainerTest extends Test
 
 
 
-        $expected = hello($a, $b);
+        $expected = \hello($a, $b);
         $actual   = $resolver->typehintFunction("hello");
 
-        $this->assertEquals($expected, $actual);
+        $I->assertEquals($expected, $actual);
     }
 }
