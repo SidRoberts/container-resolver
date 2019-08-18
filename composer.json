@@ -27,13 +27,15 @@
     "require": {
         "php": "~7.1",
 
-        "psr/container":        "~1.0",
+        "psr/container": "~1.0",
+
         "sidroberts/container": "~3.0"
     },
 
     "require-dev": {
-        "codeception/codeception": "~2.5",
-        "phpunit/php-code-coverage": "~6.0",
+        "codeception/codeception": "~3.0",
+
+        "phpunit/php-code-coverage": "~7.0",
 
         "squizlabs/php_codesniffer": "~3.4",
 
