@@ -11,8 +11,8 @@ use ReflectionFunction;
 abstract class Resolver implements ResolverInterface
 {
     /**
-     * Typehint a class using the properties in its constructor. If no constructor is present, a new instance is made
-     * anyway.
+     * Typehint a class using the properties in its constructor. If no
+     * constructor is present, a new instance is made anyway.
      */
     final public function typehintClass(string $className, array $custom = [])
     {
