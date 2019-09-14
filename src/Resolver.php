@@ -49,7 +49,7 @@ abstract class Resolver implements ResolverInterface
         return call_user_func_array(
             [
                 $class,
-                $method
+                $method,
             ],
             $params
         );
