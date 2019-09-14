@@ -3,9 +3,7 @@
 namespace Sid\ContainerResolver\Resolver;
 
 use ReflectionParameter;
-
 use Sid\Container\Container;
-
 use Sid\ContainerResolver\Resolver;
 
 class SidContainer extends Resolver

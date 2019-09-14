@@ -4,9 +4,9 @@ namespace Sid\ContainerResolver;
 
 use InvalidArgumentException;
 use ReflectionClass;
+use ReflectionFunction;
 use ReflectionMethod;
 use ReflectionParameter;
-use ReflectionFunction;
 
 abstract class Resolver implements ResolverInterface
 {

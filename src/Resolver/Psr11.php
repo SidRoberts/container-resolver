@@ -2,10 +2,8 @@
 
 namespace Sid\ContainerResolver\Resolver;
 
-use ReflectionParameter;
-
 use Psr\Container\ContainerInterface;
-
+use ReflectionParameter;
 use Sid\ContainerResolver\Resolver;
 
 class Psr11 extends Resolver
